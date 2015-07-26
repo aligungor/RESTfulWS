@@ -13,6 +13,7 @@ import r03_Json.JsonRest;
 import r04_Xml.XmlRest;
 import r05_FileDownload.FileDownloaderRest;
 import r06_FileUpload.FileUploaderRest;
+import r07_JDBC.PlayerRest;
 
 @ApplicationPath("restws")
 public class RestApplication extends Application{
@@ -26,6 +27,7 @@ public class RestApplication extends Application{
 		rootResources.add(FileDownloaderRest.class);
 		rootResources.add(FileUploaderRest.class);
 		rootResources.add(MultiPartFeature.class);
+		rootResources.add(PlayerRest.class);
 		return rootResources;
 	}
 	
